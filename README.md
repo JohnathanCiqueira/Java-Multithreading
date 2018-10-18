@@ -115,6 +115,14 @@ ativadas.</p>
 aguardando um objeto, esse método despertará apenas um deles. A escolha do encadeamento a ser ativado depende da implementação do sistema 
 operacional do gerenciamento de encadeamentos.</p>
 
+<h3>NotifyAll</h3>
+
+<p>O método notifyAll ativa todos os encadeamentos que estão aguardando no objeto, embora qual deles será processado primeiro depende da 
+implementação do sistema operacional.</p>
+
+<p>Esses métodos podem ser usados ​​para implementar o problema do consumidor do produtor, em que os encadeamentos do consumidor estão 
+aguardando os objetos em Enfileiramentos da fila e do produtor colocando o objeto na fila e notificando os encadeamentos em espera.</p>
+
 <h2>DeadLock</h2>
 
 <p>Deadlock descreve uma situação em que dois ou mais threads são bloqueados para sempre, aguardando um pelo outro. O deadlock ocorre quando 
